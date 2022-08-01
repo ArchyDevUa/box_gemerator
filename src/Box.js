@@ -1,10 +1,13 @@
 function Box(props){
     return(
         <div style={{
-            width:"200px",
-            height:"50px",
+            width:`${props.width}px`,
+            height:`${props.height}px`,
             border:"3px solid black",
-            margin:"10px auto"
+            margin:"10px auto",
+            display:"flex",
+            justifyContent:"center",
+            alignItems:"center"
         }}>Block</div>
     )
 }
